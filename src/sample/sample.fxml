@@ -22,22 +22,22 @@
          <children>
             <VBox>
                <children>
-                  <Button mnemonicParsing="false" prefWidth="150.0" text="Legdrgább pizza">
+                  <Button fx:id="btnLegDraga" mnemonicParsing="false" prefWidth="150.0" text="Legdrgább pizza">
                      <VBox.margin>
                         <Insets bottom="10.0" />
                      </VBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" prefWidth="150.0" text="Összes bevétel Ft">
+                  <Button fx:id="btnOsszes" mnemonicParsing="false" prefWidth="150.0" text="Összes bevétel Ft">
                      <VBox.margin>
                         <Insets bottom="10.0" />
                      </VBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" prefWidth="150.0" text="Drágább 2500-nál százalék">
+                  <Button fx:id="btnDraga" mnemonicParsing="false" prefWidth="150.0" text="Drágább 2500-nál százalék">
                      <VBox.margin>
                         <Insets bottom="10.0" />
                      </VBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" prefWidth="150.0" text="Akciósak fáljbaír">
+                  <Button fx:id="btnAkcios" mnemonicParsing="false" prefWidth="150.0" text="Akciósak fáljbaír">
                      <VBox.margin>
                         <Insets bottom="10.0" />
                      </VBox.margin>
@@ -49,17 +49,17 @@
             </VBox>
             <VBox>
                <children>
-                  <Button mnemonicParsing="false" prefWidth="150.0" text="Fájl beolvas">
+                  <Button fx:id="btnFajl" mnemonicParsing="false" prefWidth="150.0" text="Fájl beolvas">
                      <VBox.margin>
                         <Insets bottom="10.0" />
                      </VBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" prefWidth="150.0" text="Hibás adat törlése">
+                  <Button fx:id="btnHibas" mnemonicParsing="false" prefWidth="150.0" text="Hibás adat törlése">
                      <VBox.margin>
                         <Insets bottom="10.0" />
                      </VBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" prefWidth="150.0" text="Kilép">
+                  <Button fx:id="btnKilep" mnemonicParsing="false" prefWidth="150.0" text="Kilép">
                      <VBox.margin>
                         <Insets bottom="10.0" />
                      </VBox.margin>
