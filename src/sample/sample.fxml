@@ -49,7 +49,7 @@
             </VBox>
             <VBox>
                <children>
-                  <Button fx:id="btnFajl" mnemonicParsing="false" prefWidth="150.0" text="Fájl beolvas">
+                  <Button fx:id="btnFajl" mnemonicParsing="false" onMouseClicked="#btnFajlClick" prefWidth="150.0" text="Fájl beolvas">
                      <VBox.margin>
                         <Insets bottom="10.0" />
                      </VBox.margin>
