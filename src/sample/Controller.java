@@ -2,6 +2,10 @@ package sample;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
 
 public class Controller {
 
@@ -26,5 +30,24 @@ public class Controller {
         btnDraga.setDisable(true);
         btnAkcios.setDisable(true);
         btnHibas.setDisable(true);
+    }
+
+    public void btnFajlClick(MouseEvent mouseEvent) {
+        try {
+            FileReader fr = new FileReader("pizza/pizzeria.csv");
+            BufferedReader br = new BufferedReader(fr);
+
+            int i = 1;
+            br.readLine();
+            String sor = br.readLine();
+            while (sor != null) {
+                Pizza p = new Pizza(sor);
+                sor = br.readLine();
+            }
+            br.close();
+            fr.close();
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
     }
 }
